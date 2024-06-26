@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Socius</title>
+<link rel="stylesheet" href="css/styles.css"> 
+<style>
+  body {
+    margin: 20px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1 class="title">Socius</h1>
+  <div class="form-container">
+    <form id="sociusForm">
+      <div class="form-group">
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+      </div>
+      <div class="form-group large">
+        <label for="pais">País:</label>
+        <select id="pais" name="pais" required>
+          <option value="">Seleccione un país</option>
+          <option value="chile">Chile</option>
+          <option value="argentina">Argentina</option>
+          <option value="mexico">México</option>
+          <option value="colombia">Colombia</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="genero">Género:</label>
+        <select id="genero" name="genero">
+          <option value="masculino">Masculino</option>
+          <option value="femenino">Femenino</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <label for="confirm_password">Confirmar Contraseña:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
